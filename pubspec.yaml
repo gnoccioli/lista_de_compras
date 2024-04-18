@@ -92,5 +92,4 @@ flutter:
 
   
   assets:
-    - assets/autor.jpg
-    - assets/fatec.png
+    - lib/imagem/autor.jpg
