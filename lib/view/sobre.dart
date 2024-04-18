@@ -36,12 +36,8 @@ class Sobre extends StatelessWidget {
               'Desenvolvido por Glauber Noccioli',
               style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
             ),
-            SizedBox(height: 20),
-            // Espaço reservado para o logotipo da faculdade
-            Placeholder(fallbackHeight: 100, fallbackWidth: double.infinity),
-            SizedBox(height: 20),
-            // Espaço reservado para o logotipo do curso
-            Placeholder(fallbackHeight: 100, fallbackWidth: double.infinity),
+            Image.asset('lib/assets/autor.jpg', height: 563, width: double.infinity),
+            Image.asset('lib/assets/fatec.png', height: 65, width: double.infinity),
           ],
         ),
       ),

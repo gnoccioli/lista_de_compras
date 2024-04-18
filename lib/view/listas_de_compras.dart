@@ -7,13 +7,13 @@ class ListaDeCompras {
 
   ListaDeCompras({
     required this.nome,
-    List<ItemDeCompra>? itens,  // Removido const daqui
+    List<ItemDeCompra>? itens,
   }) : this.itens = itens ?? [];  // Se itens for null, inicialize com uma lista vazia mutável
 }
 
 
 class ListasDeCompras extends StatefulWidget {
-  const ListasDeCompras({Key? key}) : super(key: key); // Adicionando parâmetro 'key'
+  const ListasDeCompras({Key? key}) : super(key: key); 
 
   @override
   _ListasDeComprasState createState() => _ListasDeComprasState();

@@ -10,7 +10,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key); // Adicionando parâmetro 'key'
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,12 +21,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/login',
       routes: {
-        '/login': (context) => Login(), // Removendo 'const'
+        '/login': (context) => Login(),
         '/cadastro': (context) => Cadastro(),
         '/reset': (context) => ResetSenha(),
         '/sobre': (context) => Sobre(),
-        '/lista': (context) => ListasDeCompras(),
-        // A rota para 'compras' foi removida anteriormente
+        '/lista': (context) => ListasDeCompras(),      
       },
     );
   }

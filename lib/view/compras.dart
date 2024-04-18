@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'listas_de_compras.dart';  // Certifique-se de que o caminho esteja correto
+import 'listas_de_compras.dart'; 
 
 class ItemDeCompra {
   String nome;
@@ -8,7 +8,7 @@ class ItemDeCompra {
 
   ItemDeCompra({
     required this.nome,
-    this.quantidade = 1,  // Ajustado a quantidade padrão inicial para 1
+    this.quantidade = 1,  
     this.comprado = false,
   });
 }
@@ -51,10 +51,10 @@ class _ComprasState extends State<Compras> {
                 labelText: 'Adicionar Item',
                 suffixIcon: IconButton(
                   icon: const Icon(Icons.add),
-                  onPressed: _adicionarItem,  // Chama _adicionarItem quando o ícone é pressionado
+                  onPressed: _adicionarItem, 
                 ),
               ),
-              onSubmitted: (_) => _adicionarItem(),  // Também adiciona o item quando o usuário pressiona Enter
+              onSubmitted: (_) => _adicionarItem(),
             ),
           ),
           Expanded(
@@ -63,7 +63,7 @@ class _ComprasState extends State<Compras> {
               itemBuilder: (context, index) {
                 final item = widget.listaDeCompras.itens[index];
                 return Dismissible(
-                  key: UniqueKey(),  // Usando UniqueKey para garantir uma chave única para cada item
+                  key: UniqueKey(), 
                   direction: DismissDirection.endToStart,
                   onDismissed: (direction) {
                     setState(() {

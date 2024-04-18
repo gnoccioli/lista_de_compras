@@ -16,7 +16,7 @@ class _CadastroState extends State<Cadastro> {
       ),
       body: Form(
         key: _formKey,
-        child: SingleChildScrollView( // Usa um SingleChildScrollView para evitar problemas de overflow quando o teclado estiver visível
+        child: SingleChildScrollView( 
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: <Widget>[
@@ -59,9 +59,9 @@ class _CadastroState extends State<Cadastro> {
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    // Valida o formulário e, se válido, processa o cadastro
+                   
                     if (_formKey.currentState!.validate()) {
-                      // Processo de cadastro (a ser implementado)
+                   
                     }
                   },
                   child: Text('Cadastrar'),
