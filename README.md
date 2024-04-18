@@ -8,7 +8,7 @@ Este aplicativo foi desenvolvido como parte do aprendizado em desenvolvimento de
 
 Funcionalidades:
 
-• Criação e gerenciamento de listas de compras
-• Adição, edição e remoção de itens das listas
-• Pesquisa de itens na lista
-• Funcionalidade de login e cadastro de usuários.
+* Criação e gerenciamento de listas de compras
+* Adição, edição e remoção de itens das listas
+* Pesquisa de itens na lista
+* Funcionalidade de login e cadastro de usuários
